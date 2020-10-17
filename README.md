@@ -15,8 +15,10 @@ Please take a look at the list below as you need to make sure to have those inst
 To get this project running first you must clone this repository and run the following commands in order:
 
 1. Clone this repo
-2. Add the database password sent by email on the file src/main/resources/application-prod.properties
+2. Add the database url, databse and password sent by email on the file src/main/resources/application-prod.properties
 ```
+spring.datasource.url=aUrlEnviadaPorEmail
+spring.datasource.username=oUsuarioEnviadoPorEmail
 spring.datasource.password=aSenhaEnviadaPorEmail
 ```
 
