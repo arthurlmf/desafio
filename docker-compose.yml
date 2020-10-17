@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  desafio-mysql:
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=petzdb
+    ports:
+      - 3306:3306
+    volumes:
+      - ./mysql-dump:/docker-entrypoint-initdb.d
